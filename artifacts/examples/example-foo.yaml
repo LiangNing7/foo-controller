@@ -1,0 +1,8 @@
+apiVersion: foocontroller.liangning7.cn/v1alpha1
+kind: Foo
+metadata:
+  name: example-foo
+spec:
+  deploymentName: example-foo
+  replicas: 1
+
