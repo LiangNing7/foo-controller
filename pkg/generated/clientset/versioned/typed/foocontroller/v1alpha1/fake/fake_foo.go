@@ -16,10 +16,10 @@ import (
 // fakeFoos implements FooInterface
 type fakeFoos struct {
 	*gentype.FakeClientWithList[*v1alpha1.Foo, *v1alpha1.FooList]
-	Fake *FakeFoocontroolerV1alpha1
+	Fake *FakeFoocontrollerV1alpha1
 }
 
-func newFakeFoos(fake *FakeFoocontroolerV1alpha1, namespace string) foocontrollerv1alpha1.FooInterface {
+func newFakeFoos(fake *FakeFoocontrollerV1alpha1, namespace string) foocontrollerv1alpha1.FooInterface {
 	return &fakeFoos{
 		gentype.NewFakeClientWithList[*v1alpha1.Foo, *v1alpha1.FooList](
 			fake.Fake,

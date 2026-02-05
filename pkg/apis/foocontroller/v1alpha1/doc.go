@@ -1,5 +1,5 @@
 // +k8s:deepcopy-gen=package
-// +groupName=foocontrooler.liangning7.cn
+// +groupName=foocontroller.liangning7.cn
 
 // Package v1alpha1 is the v1alpha1 version of the API.
 package v1alpha1

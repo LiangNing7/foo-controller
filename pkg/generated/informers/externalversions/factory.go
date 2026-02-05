@@ -244,9 +244,9 @@ type SharedInformerFactory interface {
 	// client.
 	InformerFor(obj runtime.Object, newFunc internalinterfaces.NewInformerFunc) cache.SharedIndexInformer
 
-	Foocontrooler() foocontroller.Interface
+	Foocontroller() foocontroller.Interface
 }
 
-func (f *sharedInformerFactory) Foocontrooler() foocontroller.Interface {
+func (f *sharedInformerFactory) Foocontroller() foocontroller.Interface {
 	return foocontroller.New(f, f.namespace, f.tweakListOptions)
 }

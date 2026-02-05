@@ -18,7 +18,7 @@ type Foo struct {
 
 // FooSpec is the spec for a Foo resource.
 type FooSpec struct {
-	DepolymentName string `json:"depolymentName"`
+	DeploymentName string `json:"deploymentName"`
 	Replicas       *int32 `json:"replicas"`
 }
 

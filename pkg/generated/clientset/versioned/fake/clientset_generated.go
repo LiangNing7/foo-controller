@@ -9,8 +9,8 @@ package fake
 
 import (
 	clientset "github.com/LiangNing7/foo-controller/pkg/generated/clientset/versioned"
-	foocontroolerv1alpha1 "github.com/LiangNing7/foo-controller/pkg/generated/clientset/versioned/typed/foocontroller/v1alpha1"
-	fakefoocontroolerv1alpha1 "github.com/LiangNing7/foo-controller/pkg/generated/clientset/versioned/typed/foocontroller/v1alpha1/fake"
+	foocontrollerv1alpha1 "github.com/LiangNing7/foo-controller/pkg/generated/clientset/versioned/typed/foocontroller/v1alpha1"
+	fakefoocontrollerv1alpha1 "github.com/LiangNing7/foo-controller/pkg/generated/clientset/versioned/typed/foocontroller/v1alpha1/fake"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
@@ -88,7 +88,7 @@ var (
 	_ testing.FakeClient  = &Clientset{}
 )
 
-// FoocontroolerV1alpha1 retrieves the FoocontroolerV1alpha1Client
-func (c *Clientset) FoocontroolerV1alpha1() foocontroolerv1alpha1.FoocontroolerV1alpha1Interface {
-	return &fakefoocontroolerv1alpha1.FakeFoocontroolerV1alpha1{Fake: &c.Fake}
+// FoocontrollerV1alpha1 retrieves the FoocontrollerV1alpha1Client
+func (c *Clientset) FoocontrollerV1alpha1() foocontrollerv1alpha1.FoocontrollerV1alpha1Interface {
+	return &fakefoocontrollerv1alpha1.FakeFoocontrollerV1alpha1{Fake: &c.Fake}
 }

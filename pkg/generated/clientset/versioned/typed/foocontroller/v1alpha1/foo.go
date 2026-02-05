@@ -45,7 +45,7 @@ type foos struct {
 }
 
 // newFoos returns a Foos
-func newFoos(c *FoocontroolerV1alpha1Client, namespace string) *foos {
+func newFoos(c *FoocontrollerV1alpha1Client, namespace string) *foos {
 	return &foos{
 		gentype.NewClientWithList[*foocontrollerv1alpha1.Foo, *foocontrollerv1alpha1.FooList](
 			"foos",

@@ -51,25 +51,25 @@ func NewFilteredFooInformer(client versioned.Interface, namespace string, resync
 				if tweakListOptions != nil {
 					tweakListOptions(&options)
 				}
-				return client.FoocontroolerV1alpha1().Foos(namespace).List(context.Background(), options)
+				return client.FoocontrollerV1alpha1().Foos(namespace).List(context.Background(), options)
 			},
 			WatchFunc: func(options v1.ListOptions) (watch.Interface, error) {
 				if tweakListOptions != nil {
 					tweakListOptions(&options)
 				}
-				return client.FoocontroolerV1alpha1().Foos(namespace).Watch(context.Background(), options)
+				return client.FoocontrollerV1alpha1().Foos(namespace).Watch(context.Background(), options)
 			},
 			ListWithContextFunc: func(ctx context.Context, options v1.ListOptions) (runtime.Object, error) {
 				if tweakListOptions != nil {
 					tweakListOptions(&options)
 				}
-				return client.FoocontroolerV1alpha1().Foos(namespace).List(ctx, options)
+				return client.FoocontrollerV1alpha1().Foos(namespace).List(ctx, options)
 			},
 			WatchFuncWithContext: func(ctx context.Context, options v1.ListOptions) (watch.Interface, error) {
 				if tweakListOptions != nil {
 					tweakListOptions(&options)
 				}
-				return client.FoocontroolerV1alpha1().Foos(namespace).Watch(ctx, options)
+				return client.FoocontrollerV1alpha1().Foos(namespace).Watch(ctx, options)
 			},
 		}, client),
 		&apisfoocontrollerv1alpha1.Foo{},
